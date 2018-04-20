@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+  <title>Sedona-form</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+      <a class="main-menu__toogle"></a>
+    </nav>
+    <h1 class="page-header__title">SEDONA</h1>
+  </header>
+  <main>
+    <div class="review">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form-item introduction">
+        <h3 class="form-item__title">Представьтесь:</h3>
+        <ul class="introduction__list">
+          <li class="introduction__item">
+            <label class="introduction__label" for="name"><span>Имя:</span>
+              <input class="introduction__input" type="text" id="name" placeholder="Петр">
+            </label>
+          </li>
+          <li class="introduction__item">
+            <label class="introduction__label" for="surname"><span>Фамилия:</span>
+              <input class="introduction__input" type="text" id="surname" placeholder="Иванов">
+            </label>
+          </li>
+          <li class="introduction__item">
+            <label class="introduction__label" for="fathername"><span>Отчество:</span>
+              <input class="introduction__input" type="text" id="fathername" placeholder="Александрович">
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="form-item contacts">
+        <h3 class="form-item__title">Контактная информация:</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label class="contacts__label" for="phone"><span>Контактный телефон:</span>
+              <input class="contacts__input" type="text" id="phone" placeholder="Введите телефон">
+            </label>
+          </li>
+          <li class="contacts__item">
+            <label class="contacts__label" for="mail"><span>Электронная почта:</span>
+              <input class="contacts__input" type="text" id="mail" placeholder="Введите e-mail">
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="form-item impressions">
+        <h3 class="form-item__title">Ваше общее впечатление:</h3>
+        <ul class="impressions__list">
+          <li class="impressions__item">
+            <label class="impressions__label" for="good-imp">
+              <input class="impressions__input" type="radio" id="good-imp" name="radiobtn" checked><span>Скорее положительное</span>
+            </label>
+          </li>
+          <li class="impressions__item">
+            <label class="impressions__label" for="bad-imp">
+              <input class="impressions__input" type="radio" id="bad-imp" name="radiobtn"><span>Скорее отрицательное</span>
+            </label>
+          </li>
+          <li class="impressions__item">
+            <label class="impressions__label" for="no-imp">
+              <input class="impressions__input" type="radio" id="no-imp" name="radiobtn"><span>Затрудняюсь ответить</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="form-item places">
+        <h3 class="form-item__title">Посещенные достопримечательности:</h3>
+        <ul class="places__list">
+          <li class="places__item">
+            <label class="places__label" for="place1">
+              <input class="places__input" type="checkbox" id="place1" name="checkbtn" checked><span>Мост дьявола</span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__label" for="place2">
+              <input class="places__input" type="checkbox" id="place2" name="checkbtn" checked><span>Гора - Колокол</span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__label" for="place3">
+              <input class="places__input" type="checkbox" id="place3" name="checkbtn" checked><span>Слайд парк</span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__label" for="place4">
+              <input class="places__input" type="checkbox" id="place4" name="checkbtn"><span>Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="form-item description">
+        <h3 class="form-item__title">Опишите свои эмоции:</h3>
+        <textarea class="description__text">Опишите подробно все свои восторги</textarea>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="contact-social">
+      <a class="contact-social__link" href="#">#VISITSEDONA</a>
+      <div class="social-blog">
+        <ul class="social-blog__list">
+          <li class="social-blog__item">
+            <a class="social-blog__link social-blog__link--tv" href="#">Твиттер</a>
+          </li>
+          <li class="social-blog__item">
+            <a class="social-blog__link social-blog__link--tv" href="#">Facebook</a>
+          </li>
+          <li class="social-blog__item">
+            <a class="social-blog__link social-blog__link--tv" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="htmlacad-blog">
+        <span class="htmlacad-blog__text">Разработано</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
