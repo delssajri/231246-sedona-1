@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header class="page-header">
     <nav class="main-menu">
       <ul class="main-menu__list">
@@ -28,58 +29,68 @@
     </nav>
     <h1 class="page-header__title">SEDONA</h1>
   </header>
+  </div>
   <main class="page-main">
-    <h2 class="page-main__title">Седона - небольшой городок в Аризоне, заслуживающий большнего!</h2>
+    <div class="container">
+    <h2 class="page-main__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     <section class="advance">
-      <div class="advance__item">
-        <h3 class="advance__title">Настоящий городок</h3>
-        <span class="advance__number">- № 1 -</span>
-        <p class="advance__text">Седона не атракцион для туристов, там течет своя жизнь</p>
-      </div>
-      <div class="">
-        <div class="advance__item">
-          <h3 class="advance__title">Жилье</h3>
-          <p class="advance__text">Резомендуем пожить в настоящем мотеле, все как в кино!</p>
+      <div class="advance__wrapper">
+        <div class="advance__item advance__item--blue">
+          <h3 class="advance__title">Настоящий городок</h3>
+          <span class="advance__number">- № 1 -</span>
+          <p class="advance__text">Седона не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="advance__item">
-          <h3 class="advance__title">Сувениры</h3>
-          <p class="advance__text">Не только китайское, но и местное производство!</p>
+        <div class="advance__photo advance__city"></div>
+      </div>
+      <div class="advance__wrapper">
+        <div class="advance__item advance-example advance-example__house">
+          <h3 class="advance__title advance-example__title">Жилье</h3>
+          <p class="advance__text advance-example__text">Резомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="advance__item">
-          <h3 class="advance__title">Еда</h3>
-          <p class="advance__text">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
+        <div class="advance__item advance-example advance-example__gift">
+          <h3 class="advance__title advance-example__title">Сувениры</h3>
+          <p class="advance__text advance-example__text">Не только китайское, но и местное производство!</p>
+        </div>
+        <div class="advance__item advance-example advance-example__burger">
+          <h3 class="advance__title advance-example__title">Еда</h3>
+          <p class="advance__text advance-example__text">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
         </div>
       </div>
-      <div class="advance__item">
-        <h3 class="advance__title">Там есть мост дьявола</h3>
-        <span class="advance__number">- № 2 -</span>
-        <p class="advance__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <div class="advance__wrapper">
+        <div class="advance__item advance__item--blue">
+          <h3 class="advance__title">Там есть мост дьявола</h3>
+          <span class="advance__number">- № 2 -</span>
+          <p class="advance__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <div class="advance__photo advance__bridge"></div>
       </div>
-      <div class="advance__item">
+      <div class="advance__item advance__item--black">
         <h3 class="advance__title">Небольшая площадь</h3>
         <span class="advance__number">- № 3 -</span>
         <p class="advance__text">Все интересные места находятся очень близко</p>
       </div>
-      <div class="advance__item">
+      <div class="advance__item advance__item--black">
         <h3 class="advance__title">Красивая дорога</h3>
         <span class="advance__number">- № 4 -</span>
         <p class="advance__text">Ехать в Седону из Лас - Вегаса совсем не скучно!</p>
       </div>
-      <div class="advance__item">
+      <div class="advance__item advance__item--black">
         <h3 class="advance__title">Мало туристов</h3>
         <span class="advance__number">- № 5 -</span>
         <p class="advance__text">Большинство едет в Гранд Каньон и толпится там</p>
       </div>
     </section>
     <div class="find-hotel">
-      <b class="find-hotel__title">Заинтересовались?</b>
+      <h3 class="find-hotel__title">Заинтересовались?</h3>
       <p class="find-hotel__text">Укажите предполагаемые даты поездни, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a class="find-hotel__btn btn" href="#">Найти гостиницу</a>
       <div class="map"></div>
     </div>
+    </div>
   </main>
   <footer class="page-footer">
+    <div class="container">
     <div class="contact-social">
       <a class="contact-social__link" href="#">#VISITSEDONA</a>
       <div class="social-blog">
@@ -99,6 +110,7 @@
         <span class="htmlacad-blog__text">Разработано</span>
       </div>
     </div>
+    </footer>
   </footer>
 </body>
 
