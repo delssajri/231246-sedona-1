@@ -23,6 +23,15 @@
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
 }
+.main-menu__item {
+  &:hover {
+    background-color: #669cc0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
 
 .main-menu__link {
   font-size: 18px;
@@ -32,4 +41,63 @@
   color: #ffffff;
 
   text-decoration: none;
+}
+
+.main-menu__toggle {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+  border: none;
+
+  background-color: #81b3d2;
+}
+
+.main-menu--closed .main-menu__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  right: 20px;
+
+  width: 23px;
+  height: 3px;
+
+  background-color: #81b3d2;
+  box-shadow: 0 10px 0 0 #81b3d2, 0 20px 0 0 #81b3d2;
+}
+
+.main-menu--opened .main-menu__toggle::before,
+.main-menu--opened .main-menu__toggle::after {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  right: 43px;
+
+  width: 23px;
+  height: 3px;
+
+  background-color: #ffffff;
+}
+
+.main-menu--opened .main-menu__toggle::before {
+  transform: rotate (45deg);
+  box-shadow: none;
+}
+
+.main-menu--opened .main-menu__toggle::after {
+  transform: rotate (-45deg);
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-menu--closed .main-menu__list {
+    display: none;
+  }
 }
